@@ -76,8 +76,4 @@ EXEC ops.usp_TASK_LOG_CLOSE_ZOMBIES @MinutosMaximos = 240;
 EXEC ops.usp_TASK_LOG_PURGE @DiasRetencion = 180;           
 ```
 
-    filas = cargar_fichero()
-    if filas == 0:
-        log.warning("El fichero de entrada estaba vacío")   # -> WN
-    procesar(filas)                                          # excepción -> KO + traza
-```
+
